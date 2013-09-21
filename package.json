@@ -1,0 +1,22 @@
+{
+  "name": "Hambone",
+  "version": "0.0.0",
+  "description": "Big ole stack a HAM!",
+  "main": "public/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zjr/hambone.git"
+  },
+  "author": "ZJR <me@zjr.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zjr/hambone/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "bower": "~1.2.6"
+  }
+}
