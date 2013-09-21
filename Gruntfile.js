@@ -11,6 +11,17 @@ module.exports = function(grunt) {
 					'public/css/main.css': 'sass/main.sass'
 				}
 			}
+		},
+
+		watch: {
+			sass: {
+				files: ['sass/**/*'],
+				tasks: ['sass']
+			},
+			livereload: {
+				options: {livereload: true},
+				files: ['public/**/*', 'views/**/*']
+			}
 		}
 	});
 
