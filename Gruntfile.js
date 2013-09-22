@@ -6,19 +6,19 @@ module.exports = function(grunt) {
 
 		watch: {
 			coffee: {
-				files: ['coffee/{,*}*.coffee'],
+				files: ['scripts/{,*}*.coffee'],
 				tasks: ['coffee']
 			},
 			sass: {
-				files: ['sass/{,*/}*.sass'],
+				files: ['styles/{,*/}*.sass'],
 				tasks: ['sass']
 			},
 			livereload: {
 				options: {livereload: true},
 				files: [
-					'public/css/{,*/}*.css',
-					'public/js/{,*/}*.js',
-					'public/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+					'public/scripts/{,*/}*.js',
+					'public/styles/{,*/}*.css',
+					'public/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
 					'views/{,*/}*.haml'
 				]
 			}
@@ -30,9 +30,9 @@ module.exports = function(grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: 'coffee',
+					cwd: 'scripts',
 					src: '{,*/}*.coffee',
-					dest: 'public/js',
+					dest: 'public/scripts',
 					ext: '.js'
 				}]
 			},
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 					sourcemap: true
 				},
 				files: {
-					'public/css/main.css': 'sass/main.sass'
+					'public/styles/main.css': 'styles/main.sass'
 				}
 			}
 		}

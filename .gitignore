@@ -8,5 +8,5 @@ node_modules
 Gemfile.lock
 
 # Ignore generated CSS & JS
-public/css
-public/js
+public/scripts
+public/styles
