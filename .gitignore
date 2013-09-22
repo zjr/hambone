@@ -7,5 +7,6 @@ node_modules
 # Ignore the Gemfile.lock
 Gemfile.lock
 
-# Ignore the css, which should be exclusively generated.
+# Ignore generated CSS & JS
 public/css
+public/js
